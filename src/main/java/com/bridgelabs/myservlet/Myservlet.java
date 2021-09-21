@@ -15,6 +15,6 @@ public class Myservlet extends HttpServlet {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException
 	{
 		PrintWriter out= response.getWriter();
-		out.print("<h1>hello<h1>");
+		out.print("<h1>hello Servlet<h1>");
 	}
 }
