@@ -17,7 +17,7 @@ public class Login extends HttpServlet {
 		PrintWriter out= response.getWriter();
 		String user= request.getParameter("user");
 		String pass = request.getParameter("pass");
-		if(pass!= null && pass.equals(password))
+		if(user.matches("^[A-Z][A-Za-z]{3,}")&& pass !=null && pass.equals(password))
 		{
 			response.sendRedirect(" welcome.html");
 		}
